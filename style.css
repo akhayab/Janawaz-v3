@@ -1,173 +1,33 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  font-family:Arial,sans-serif;
-  background:#f5f7fb;
-  color:#333;
-  line-height:1.6;
-}
-
-.container{
-  width:90%;
-  max-width:1200px;
-  margin:auto;
-}
-
-header{
-  background:linear-gradient(90deg,#0d47a1,#1976d2);
-  color:#fff;
-  position:sticky;
-  top:0;
-  z-index:1000;
-}
-
-header .container{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:18px 0;
-}
-
-.logo h2{
-  font-size:28px;
-}
-
-nav ul{
-  list-style:none;
-  display:flex;
-  gap:20px;
-}
-
-nav a{
-  color:#fff;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-nav a:hover{
-  color:#ffd54f;
-}
-
-.hero{
-  background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-  url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=80');
-  background-size:cover;
-  background-position:center;
-  color:#fff;
-  text-align:center;
-  padding:120px 20px;
-}
-
-.hero h1{
-  font-size:48px;
-  margin-bottom:20px;
-}
-
-.hero p{
-  max-width:700px;
-  margin:0 auto 30px;
-  font-size:18px;
-}
-
-.btn{
-  display:inline-block;
-  background:#ff9800;
-  color:#fff;
-  padding:12px 24px;
-  margin:8px;
-  border-radius:6px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.btn2{
-  background:#2e7d32;
-}
-
-.btn:hover{
-  opacity:.9;
-}
-
-section{
-  padding:70px 0;
-}
-
-h2{
-  text-align:center;
-  color:#0d47a1;
-  margin-bottom:30px;
-}
-
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:#fff;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 5px 15px rgba(0,0,0,.1);
-  text-align:center;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-  transition:.3s;
-}
-
-.volunteer{
-  text-align:center;
-}
-
-.volunteer button{
-  background:#1976d2;
-  color:#fff;
-  border:none;
-  padding:14px 30px;
-  border-radius:6px;
-  font-size:17px;
-  cursor:pointer;
-}
-
-.volunteer button:hover{
-  background:#0d47a1;
-}
-
-.contact{
-  text-align:center;
-}
-
-footer{
-  background:#111;
-  color:#fff;
-  text-align:center;
-  padding:20px;
-}
-
 @media(max-width:768px){
 
 header .container{
   flex-direction:column;
+  padding:15px 0;
+}
+
+.logo h2{
+  color:white;
+  margin-bottom:15px;
 }
 
 nav ul{
-  flex-direction:column;
-  text-align:center;
-  padding:15px 0;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+nav a{
+  font-size:16px;
+}
+
+.hero{
+  padding:80px 20px;
 }
 
 .hero h1{
   font-size:34px;
-}
-
-.hero p{
-  font-size:16px;
 }
 
 }
