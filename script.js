@@ -1,4 +1,3 @@
-
 function register() {
-  alert("Volunteer Registration Coming Soon!");
+  alert("Volunteer Registration will be available soon!");
 }
